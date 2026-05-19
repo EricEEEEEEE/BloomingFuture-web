@@ -28,3 +28,12 @@ When education becomes pure investment, measured only in performance and scale, 
 Life has many hard crossings. In the end, only real talent, real character and real integrity see a person through. Life has many dreams worth chasing. Look back — the chasing itself was the dream.
 
 To cultivate young people who are learned, open-minded and joyful — that is our work. We will not change the world. But when more young people, through our teaching, come to know the beauty of literature, the quiet bearing of a cultivated character, and the command of their own language — the world they make, in their turn, will be a better one. That is Blooming Future.
+
+## Mascot
+
+### CN
+〈 大象无形 〉
+大音希声，大象无形 — 老子 · 道德经
+
+### EN
+The greatest form has no shape.

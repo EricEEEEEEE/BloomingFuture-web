@@ -54,3 +54,17 @@ Chinese education growing across more than 700 cities in China.
 20+ units
 Subsidiaries
 Campuses, travel, creative studios, technology — unified by AI.
+
+## Credentials
+
+### CN
+商务部特许经营备案
+国家版权局作品登记
+ISO 9001 质量管理体系
+文旅部审批教材
+
+### EN
+MOFCOM Franchise Filing
+National Copyright Registration
+ISO 9001 Quality Management
+MCT Approved Examination Textbook

@@ -64,3 +64,31 @@ Tools that give teachers more time with students — reading assessment, written
 Conversational guides to Chinese culture
 From Tang poetry to the Analects to modern fiction — AI companions that connect great texts to a child's real life. Designed for Singapore's bilingual families, where literature should be a living experience, not just an exam subject.
 // humanities
+
+## Ten Minutes
+
+### CN
+每堂课开头十分钟 · 不只是教中文
+
+读一首诗
+讲一个字
+听一段文
+写一句话
+问一个问题
+说一个典故
+看一幅图
+练一次表达
+留一个思考
+
+### EN
+Ten minutes per lesson — we don't just teach Chinese.
+
+Read a poem
+Learn a character
+Hear a passage
+Write one sentence
+Ask one question
+Tell an allusion
+Read an image
+Practice expression
+Keep a thought
