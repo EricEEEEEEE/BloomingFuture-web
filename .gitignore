@@ -1,0 +1,31 @@
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editor
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+npm-debug.log*
+
+# This project is intentionally framework-free.
+# If you see node_modules or package.json appear, something has gone wrong.
+node_modules/
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Local previews / scratch
+/.preview/
+/scratch/
+/tmp/
+
+# Environment (none expected, just in case)
+.env
+.env.local
