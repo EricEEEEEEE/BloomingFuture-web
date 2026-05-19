@@ -893,45 +893,71 @@ button {
   font-style: italic;
 }
 
-.ten-grid {
+.ritual-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 16px;
 }
 
-.ten-grid span {
-  min-height: 54px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 16px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
+.ritual-card {
+  position: relative;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px 24px;
+  border: 1px solid var(--line);
   background: var(--bg-card);
-  color: var(--ink-2);
+  overflow: hidden;
 }
 
-.ten-grid b {
+.ritual-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+}
+
+.ritual-num {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.ritual-title-cn {
+  margin: 24px 0 4px;
   color: var(--ink);
   font-family: var(--serif-cn);
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 500;
+  line-height: 1.25;
 }
 
-.ten-grid i {
-  color: var(--ink-4);
-  font-family: var(--mono);
-  font-style: normal;
+.ritual-title-en {
+  margin: 0;
+  color: var(--ink-2);
+  font-family: var(--serif);
+  font-size: 19px;
+  font-style: italic;
+  line-height: 1.25;
 }
 
-.ten-grid em {
+.ritual-desc-cn {
+  margin: auto 0 4px;
+  color: var(--ink-2);
+  font-family: var(--serif-cn);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.ritual-desc-en {
+  margin: 0;
   color: var(--ink-3);
   font-family: var(--mono);
-  font-size: 11px;
-  font-style: normal;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .singapore {
@@ -1411,7 +1437,7 @@ button {
   .stats,
   .credentials,
   .product-grid,
-  .ten-grid,
+  .ritual-grid,
   .contact-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1487,7 +1513,7 @@ button {
   .stats,
   .credentials,
   .product-grid,
-  .ten-grid,
+  .ritual-grid,
   .contact-grid,
   .phil-body,
   .foot-top {
@@ -1536,9 +1562,9 @@ button {
     gap: 4px;
   }
 
-  .ten-grid span {
-    justify-content: flex-start;
-    border-radius: 28px;
+  .ritual-card {
+    min-height: 180px;
+    padding: 24px 22px 22px;
   }
 
   .foot-bot {

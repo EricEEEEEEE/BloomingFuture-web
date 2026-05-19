@@ -70,25 +70,25 @@ From Tang poetry to the Analects to modern fiction — AI companions that connec
 ### CN
 每堂课开头十分钟 · 不只是教中文
 
-读一首诗
-讲一个字
-听一段文
-写一句话
-问一个问题
-说一个典故
-看一幅图
-练一次表达
-留一个思考
+1. 汉字十分钟 / 讲偏旁·演变·用法
+2. 哲学十分钟 / 启发独立思考
+3. 礼仪十分钟 / 餐饮·校园·待人
+4. 论语十分钟 / 经典与现代生活
+5. 品格十分钟 / 修养·气度·格局
+6. 理想十分钟 / 志向·路径·坚持
+7. 审美十分钟 / 字·画·音·器
+8. 健康十分钟 / 身心·习惯·节律
+9. 自立十分钟 / 独立判断与生活
 
 ### EN
 Ten minutes per lesson — we don't just teach Chinese.
 
-Read a poem
-Learn a character
-Hear a passage
-Write one sentence
-Ask one question
-Tell an allusion
-Read an image
-Practice expression
-Keep a thought
+1. 10 min: Characters / Roots, evolution, use.
+2. 10 min: Philosophy / Sparking independent thought.
+3. 10 min: Etiquette / Dining, school, manners.
+4. 10 min: Analects / Classics in modern life.
+5. 10 min: Character / Cultivation and breadth.
+6. 10 min: Aspiration / Aspiration and resolve.
+7. 10 min: Aesthetics / Words, art, sound, form.
+8. 10 min: Wellbeing / Body, mind, rhythm.
+9. 10 min: Independence / Independence in life.
