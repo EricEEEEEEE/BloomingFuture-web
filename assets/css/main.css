@@ -989,6 +989,16 @@ button {
   letter-spacing: .12em;
 }
 
+.sg-tags span {
+  display: flex;
+  flex: 1 1 calc(20% - 8px);
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 0;
+  text-align: center;
+}
+
 .sg-card {
   position: relative;
   padding: 40px;
@@ -1131,23 +1141,30 @@ button {
 }
 
 .mascot-callout {
-  max-width: 560px;
-  margin: 46px 0 0 auto;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 24px;
+  width: 100%;
+  margin: 64px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
   align-items: center;
-  padding: 18px 0 18px 22px;
-  border-block: 1px solid var(--line-strong);
+  padding: 64px 0;
+  border-block: 1px solid var(--line);
   text-align: left;
 }
 
 .mascot-callout img {
-  width: 150px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.mascot-callout figcaption {
+  display: grid;
+  gap: 6px;
 }
 
 .mascot-callout h3 {
-  margin: 0 0 10px;
+  margin: 0;
   color: var(--bf-navy);
   font-family: var(--serif-cn);
   font-size: 24px;
@@ -1203,6 +1220,12 @@ button {
 
 .contact-card.primary {
   background: linear-gradient(160deg, var(--red-soft), var(--bg-card));
+}
+
+.contact-card.tianjin .lines {
+  margin-top: 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
 }
 
 .tag {
@@ -1464,8 +1487,8 @@ button {
     font-size: 38px;
   }
 
-  .mascot-callout {
-    margin-inline: auto 0;
+  .sg-tags span {
+    flex-basis: 150px;
   }
 }
 
@@ -1551,9 +1574,8 @@ button {
   }
 
   .mascot-callout {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 22px 0;
+    flex-direction: column;
+    padding: 48px 0;
     text-align: center;
   }
 
