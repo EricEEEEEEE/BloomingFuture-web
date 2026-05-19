@@ -232,6 +232,12 @@ Founded in 1999...
 - `cert-copyright.png`：far1999.com 未暴露国家版权局单独证书图，当前用 typography 占位。
 - `cert-mct.png`：far1999.com 未暴露文旅部审批单独证书图，当前用 typography 占位。
 
+### v1.6 资产待补
+
+- `logo-bf-mark.png` 高清版：far1999.com 本轮仅暴露 160×46 横版 logo 与 37×37 小图，未暴露 >=512×512 PNG 或 SVG，当前小图暂不替换。
+- `mascot-elephant.png` 官方版：far1999.com 本轮未暴露“大象无形”官方吉祥物素材，当前图暂不替换。
+- `cert-mofcom-official.png`：far1999.com 本轮未暴露商务部红头文件图，当前 `cert-mofcom.png` 暂不替换。
+
 ### 已核对的事实（不要再质疑）
 
 - 「27 万学生」= 全国累计在读学生数 ✓
