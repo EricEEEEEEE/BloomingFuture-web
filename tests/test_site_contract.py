@@ -1,3 +1,5 @@
+import hashlib
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -40,6 +42,15 @@ class SiteContractTests(unittest.TestCase):
 
         for filename in REQUIRED_ASSETS:
             (self.root / "assets/img" / filename).write_bytes(b"fixture")
+
+        asset_records = {
+            filename: {"sha256": hashlib.sha256(b"fixture").hexdigest()}
+            for filename in REQUIRED_ASSETS
+        }
+        (self.root / "assets/img/provenance.json").write_text(
+            json.dumps({"schema": 1, "assets": asset_records}),
+            encoding="utf-8",
+        )
 
         contact_text = "\n".join(CONTACT_VALUES)
         (self.root / "content/contact.md").write_text(contact_text, encoding="utf-8")
@@ -88,6 +99,16 @@ if (isMobile) connections.length = 0;""",
     def test_missing_real_asset_is_blocked(self):
         (self.root / "assets/img/textbook-5.jpg").unlink()
         self.assertTrue(any("required asset" in item for item in inspect_project(self.root)))
+
+    def test_same_name_asset_replacement_is_blocked(self):
+        (self.root / "assets/img/campus-2.jpg").write_bytes(b"same-path fake")
+        self.assertTrue(
+            any("asset identity mismatch" in item for item in inspect_project(self.root))
+        )
+
+    def test_missing_asset_provenance_manifest_is_blocked(self):
+        (self.root / "assets/img/provenance.json").unlink()
+        self.assertTrue(any("provenance manifest" in item for item in inspect_project(self.root)))
 
     def test_contact_drift_is_blocked(self):
         index = self.root / "index.html"

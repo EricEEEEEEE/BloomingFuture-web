@@ -28,7 +28,7 @@ ASSET_DIMENSIONS = {
 class ReleaseReadinessTests(unittest.TestCase):
     def test_release_report_records_all_automated_and_browser_evidence(self):
         self.assertTrue(REPORT_PATH.is_file())
-        self.assertIn("51/51", REPORT)
+        self.assertIn("53/53", REPORT)
         for viewport in ("1440×900", "1024×768", "768×1024", "390×844"):
             self.assertIn(viewport, REPORT)
         self.assertGreaterEqual(REPORT.count("横向溢出 0"), 4)
