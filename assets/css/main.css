@@ -113,6 +113,17 @@ button {
   font: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--bf-blue);
+  outline-offset: 4px;
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
 .wrap {
   width: min(1160px, calc(100% - 48px));
   margin: 0 auto;
@@ -1841,6 +1852,15 @@ button {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+
   html {
     scroll-behavior: auto;
   }

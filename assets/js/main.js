@@ -13,20 +13,28 @@
   setNavState();
 
   if (burger && nav && navLinks) {
+    function closeNav(returnFocus = false) {
+      navLinks.classList.remove("open");
+      nav.classList.remove("open");
+      document.body.classList.remove("nav-open");
+      burger.setAttribute("aria-expanded", "false");
+      if (returnFocus) burger.focus();
+    }
+
     burger.addEventListener("click", () => {
       const isOpen = navLinks.classList.toggle("open");
       nav.classList.toggle("open", isOpen);
+      document.body.classList.toggle("nav-open", isOpen);
       burger.setAttribute("aria-expanded", String(isOpen));
-      burger.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      if (isOpen) navLinks.querySelector("a")?.focus();
     });
 
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        nav.classList.remove("open");
-        burger.setAttribute("aria-expanded", "false");
-        burger.setAttribute("aria-label", "Open navigation");
-      });
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeNav()));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && nav.classList.contains("open")) closeNav(true);
+    });
+    document.addEventListener("click", (event) => {
+      if (nav.classList.contains("open") && !nav.contains(event.target)) closeNav();
     });
   }
 
