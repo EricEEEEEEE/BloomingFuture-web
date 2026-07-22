@@ -4,7 +4,7 @@
 
 ## 发布结论
 
-- 自动化契约测试：**51/51 通过**。
+- 自动化契约测试：**53/53 通过**。
 - 页面保持纯 HTML、CSS、JavaScript，无 build step、框架、npm 或外部 CDN。
 - 全站照片、教材、证书与吉祥物均为项目已有或从 `far1999.com` 官方页面取得的真实素材，**未使用 AI 生成图**。
 - HTML 36 KB、CSS 36 KB、JavaScript 20 KB；HTML 低于 80 KB，JavaScript 未超过 20 KB 控制线。
@@ -40,6 +40,8 @@
 | `mascot-elephant.png` | 450×400 | 用户确认沿用项目已有“小 A”版；官网当前未再暴露直接 URL |
 
 素材页：`https://www.far1999.com/`、`https://www.far1999.com/about.html`、`https://www.far1999.com/courses.html`。原 logo 继续沿用；本轮官网没有可核验的高清独立五色花瓣 logo，因此没有替换或生成替代品。
+
+以上 12 个当前使用素材的 SHA-256、像素尺寸与来源状态同时固化在 `assets/img/provenance.json`；契约测试会逐文件计算 hash，同名替换也会被拦截。
 
 ## v2.0 验收范围
 

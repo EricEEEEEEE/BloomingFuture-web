@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Dependency-free contract checks for the Blooming Future static site."""
 
+import hashlib
+import json
 import re
 import sys
 from html.parser import HTMLParser
@@ -81,6 +83,29 @@ def local_resource_path(root, value):
     return root / clean.lstrip("/")
 
 
+def read_asset_manifest(root, issues):
+    path = root / "assets/img/provenance.json"
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, UnicodeDecodeError, json.JSONDecodeError) as error:
+        issues.append(f"missing or unreadable asset provenance manifest: {error}")
+        return None
+
+    assets = payload.get("assets")
+    if payload.get("schema") != 1 or not isinstance(assets, dict):
+        issues.append("invalid asset provenance manifest schema")
+        return None
+    return assets
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(128 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def inspect_project(root):
     root = Path(root).resolve()
     issues = []
@@ -88,6 +113,7 @@ def inspect_project(root):
     css = read_text(root / "assets/css/main.css", issues, "main.css")
     script = read_text(root / "assets/js/main.js", issues, "main.js")
     contact = read_text(root / "content/contact.md", issues, "contact.md")
+    asset_manifest = read_asset_manifest(root, issues)
 
     parser = ResourceParser()
     parser.feed(index)
@@ -105,8 +131,20 @@ def inspect_project(root):
         issues.append("external runtime asset in JavaScript")
 
     for filename in REQUIRED_ASSETS:
-        if not (root / "assets/img" / filename).is_file():
+        asset_path = root / "assets/img" / filename
+        if not asset_path.is_file():
             issues.append(f"missing required asset: assets/img/{filename}")
+            continue
+        if asset_manifest is None:
+            continue
+        record = asset_manifest.get(filename)
+        expected_hash = record.get("sha256") if isinstance(record, dict) else None
+        if not isinstance(expected_hash, str) or not re.fullmatch(r"[0-9a-f]{64}", expected_hash):
+            issues.append(f"missing valid provenance hash: assets/img/{filename}")
+            continue
+        actual_hash = sha256_file(asset_path)
+        if actual_hash != expected_hash:
+            issues.append(f"asset identity mismatch: assets/img/{filename}")
 
     for value in CONTACT_VALUES:
         if value not in index:
@@ -144,7 +182,7 @@ def main(argv):
         for issue in issues:
             print(f"- {issue}")
         return 1
-    print("[contract] PASS: local assets, brand, contacts, and motion baseline")
+    print("[contract] PASS: asset identity, brand, contacts, and motion baseline")
     return 0
 
 

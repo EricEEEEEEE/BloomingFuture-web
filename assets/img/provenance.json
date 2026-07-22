@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "assets": {
+    "campus-1.jpg": {
+      "sha256": "ffdd632d19cd998f7ae29db06528621fc1b7d1066edceea2e5b4bfe9b80f6cd8",
+      "width": 404,
+      "height": 467,
+      "source": "https://www.far1999.com/web/guanyuyuanfang/",
+      "status": "Official-site archive; direct image URL is no longer exposed"
+    },
+    "campus-2.jpg": {
+      "sha256": "4b6038af0086ae5e92b57ad746bbc2b1fc38a090d511351cea54848e7c7d4f11",
+      "width": 480,
+      "height": 276,
+      "source": "https://www.far1999.com/skin/images/home-tx.png",
+      "status": "Current official image URL verified"
+    },
+    "campus-3.jpg": {
+      "sha256": "aca0109ffb78d4453c8bf2442cb8f204018180418dc7b8ab5e5288d2e09b4ee5",
+      "width": 480,
+      "height": 276,
+      "source": "https://www.far1999.com/skin/images/home-hk.png",
+      "status": "Current official image URL verified"
+    },
+    "textbook-1.jpg": {
+      "sha256": "4daae34287b382f3f97e1b92d79460c3f1c1c534af931c841995c5f045e761ff",
+      "width": 643,
+      "height": 510,
+      "source": "https://www.far1999.com/courses.html",
+      "status": "Official-site archive; direct image URL is no longer exposed"
+    },
+    "textbook-2.jpg": {
+      "sha256": "29f3ee0238f4b37e784123a9f4b32ca4e96ff608e2f1593e4302c3e778305ada",
+      "width": 631,
+      "height": 510,
+      "source": "https://www.far1999.com/courses.html",
+      "status": "Official-site archive; direct image URL is no longer exposed"
+    },
+    "textbook-3.jpg": {
+      "sha256": "042908d1dd732c3c51678b0f60a7b94a0280eac68ebcb7b2ab16f58b40492fc5",
+      "width": 584,
+      "height": 510,
+      "source": "https://www.far1999.com/courses.html",
+      "status": "Official-site archive; direct image URL is no longer exposed"
+    },
+    "textbook-4.jpg": {
+      "sha256": "250c2001f0cae09295f9c7bb70c766eb781f29524992cbc282e4f62b1768cb4b",
+      "width": 608,
+      "height": 510,
+      "source": "https://www.far1999.com/courses.html",
+      "status": "Official-site archive; direct image URL is no longer exposed"
+    },
+    "textbook-5.jpg": {
+      "sha256": "8fbcfdf175b9a77b224fa9da7409e0dddf2bd5da223527899bbca29d91f8c834",
+      "width": 590,
+      "height": 366,
+      "source": "https://www.far1999.com/skin/images/courses_04-r.jpg",
+      "status": "Current official image URL verified"
+    },
+    "cert-mofcom.png": {
+      "sha256": "3139e88af269ebb16425a3f3cfe27f0fcc7a1e757c663498f35bf2b9a0ef8935",
+      "width": 308,
+      "height": 251,
+      "source": "https://www.far1999.com/skin/images/about_23.jpg",
+      "status": "Low-resolution crop from the current official composite"
+    },
+    "cert-iso9001.png": {
+      "sha256": "4b8ec988caee3aa3517608022d4d627c1933bfb4eef27556a0db2a313d5b3fc5",
+      "width": 308,
+      "height": 437,
+      "source": "https://www.far1999.com/skin/images/about_23.jpg",
+      "status": "Low-resolution crop from the current official composite"
+    },
+    "mascot-elephant.png": {
+      "sha256": "95f8e39b5adcfacd24bddf04d0a52ce93f2d02bf5c229ac9688a195edae18094",
+      "width": 450,
+      "height": 400,
+      "source": "project-approved-existing-asset",
+      "status": "User-approved small A version; official direct URL is no longer exposed"
+    },
+    "bloomingfuture-logo.png": {
+      "sha256": "cda1146f166e586014768c5444d6f909e36855dd584c539b3147063711a791de",
+      "width": 3543,
+      "height": 3543,
+      "source": "project-approved-existing-asset",
+      "status": "Original project logo retained by user decision"
+    }
+  }
+}
