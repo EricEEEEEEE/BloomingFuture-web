@@ -1,19 +1,20 @@
 {
   "schema": 1,
-  "stage": "5",
-  "phase": "implementing",
-  "cycle": 1,
+  "stage": "loop",
+  "phase": "test-writing",
+  "cycle": 2,
   "project_name": "BloomingFuture-web",
-  "round_count": 8,
+  "round_count": 0,
   "round_cap": 20,
   "batch_size": 5,
   "last_round_commit": "af5d843",
   "milestones": [
-    "T02-first-hero"
+    "T02-first-hero",
+    "voyage_done"
   ],
   "env": {
     "node": "v24.15.0",
     "python3": "3.9.6"
   },
-  "last_session": "2026-07-22T15:28:52+08:00"
+  "last_session": "2026-07-22T15:41:48+08:00"
 }
