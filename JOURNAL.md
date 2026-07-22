@@ -7,6 +7,7 @@
 - 2026-07-22 · T01 红：新增 5 项站点契约考题，首次运行因 `scripts.site_contract` 不存在而 exit 1；失败考卷已单独存档 `ff3776b`。
 - 2026-07-22 · T01 ✅ 5 红→绿：无依赖契约裁判完成，`verify.sh` exit 0；实现存档 `c6341f9`。
 - 2026-07-22 · T02 红：新增 9 项 Hero 考题，14 项总测试中 9 项失败；缺口覆盖新定位、静态降动效、暂停、限帧、pointer、避让区与 update/draw 分层，失败考卷存档 `b81f37a`。
+- 2026-07-22 · T02 ✅ 14 红→绿：Hero 知识网络、可读安全区、桌面/移动限帧、离屏暂停与 reduced-motion 静态帧完成；浏览器 1440/390px 无溢出且 console 全净，实现存档 `ec8a073`。
 - [audit] phase → test-writing @ 2026-07-22T14:14:05+08:00
 - [audit] phase → implementing @ 2026-07-22T14:15:05+08:00
 - [audit] phase → test-writing @ 2026-07-22T14:17:14+08:00
