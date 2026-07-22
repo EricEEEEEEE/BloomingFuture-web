@@ -8,7 +8,10 @@
 - 2026-07-22 · T01 ✅ 5 红→绿：无依赖契约裁判完成，`verify.sh` exit 0；实现存档 `c6341f9`。
 - 2026-07-22 · T02 红：新增 9 项 Hero 考题，14 项总测试中 9 项失败；缺口覆盖新定位、静态降动效、暂停、限帧、pointer、避让区与 update/draw 分层，失败考卷存档 `b81f37a`。
 - 2026-07-22 · T02 ✅ 14 红→绿：Hero 知识网络、可读安全区、桌面/移动限帧、离屏暂停与 reduced-motion 静态帧完成；浏览器 1440/390px 无溢出且 console 全净，实现存档 `ec8a073`。
+- 2026-07-22 · T03 红：新增 7 项真实证据考题，21 项总测试中 5 项失败；当前缺少时间轴、天津证据网格、稳定图片尺寸与完整证书窗，失败考卷存档 `9a99726`。
 - [audit] phase → test-writing @ 2026-07-22T14:14:05+08:00
 - [audit] phase → implementing @ 2026-07-22T14:15:05+08:00
 - [audit] phase → test-writing @ 2026-07-22T14:17:14+08:00
 - [audit] phase → implementing @ 2026-07-22T14:18:21+08:00
+- [audit] phase → test-writing @ 2026-07-22T14:27:23+08:00
+- [audit] phase → implementing @ 2026-07-22T14:29:04+08:00

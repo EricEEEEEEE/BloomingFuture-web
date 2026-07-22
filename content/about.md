@@ -1,5 +1,5 @@
 # Section: about
-> Last sync to index.html: 2026-05-19
+> Last sync to index.html: 2026-07-22
 
 ## CN
 01 / The Group
@@ -8,9 +8,23 @@ AI 赋能 华文传承
 
 花开远方创立于 1999 年，总部设于中国天津，是中华人民共和国商务部授予的品牌加盟总部。我们专注于青少年华文的培育，以及文化游学。2015 年起，花开远方开始探索 AI 技术与华文教育的深度结合，致力于以科技赋能语言学习，逐步发展成为一家以 AI 华文教育为核心的教育科技公司。
 
-集团下设二十余家全资子公司——教学校区、国际旅行、文化创意、网络科技一应俱全；同时在中国七百多座城市设有分支机构，累计在读学员逾 27 万。扎实的教育根基，是我们推进 AI 转型的底气所在。
+集团下设二十余家全资子公司，在中国七百多座城市设有分支机构，累计服务学员逾 27 万。2023 年，新加坡运营基地成为连接海外华人家庭的新节点；扎实的教育根基，是我们推进 AI 转型的底气。
 
-2023 年，花开远方在新加坡正式落地。新加坡独特的双语教育环境，让我们看到了华文教育真正的使命所在——帮助本地华人家庭让孩子重新爱上母语，让华文在这片土地上继续生长。
+## Timeline
+
+1999 · 天津创立 / Founded in Tianjin
+2015 · AI 探索 / AI education research begins
+2023 · 全球连接 / Singapore operating node
+NOW · 智能学习 / Curriculum meets intelligence
+
+## Real Education
+
+从天津的课堂与教材出发
+Built from real classrooms, teachers and curriculum in Tianjin.
+
+天津总部 · Tianjin HQ
+教学空间 · Classroom
+教学共同体 · Faculty
 
 26 years
 创立至今
@@ -35,9 +49,7 @@ Advancing Chinese education with artificial intelligence.
 
 Founded in 1999 and headquartered in Tianjin, Blooming Future is a franchise headquarters licensed by the Ministry of Commerce of the People's Republic of China. Our work is the cultivation of humanities literacy in young people, and the curation of cultural travel that gives that literacy its ground. Since 2015, we have been at the forefront of integrating artificial intelligence with Chinese language education — building towards a future where technology and humanistic learning grow together. Today, Blooming Future has evolved into an AI-driven EdTech company, with Chinese language education at its core.
 
-The group operates more than twenty wholly-owned subsidiaries — campuses, international travel, cultural creative studios, and a technology division — with branch institutions in over 700 cities across China and more than 270,000 students reached. This scale is not just a number; it is the foundation that makes our AI transformation meaningful.
-
-In 2023, Blooming Future established its presence in Singapore. The city's unique bilingual education environment showed us where Chinese education is truly needed — helping local Chinese families reconnect their children with their mother tongue, and keeping the Chinese language alive on this soil.
+The group operates more than twenty wholly-owned subsidiaries, with branches in over 700 Chinese cities and more than 270,000 students reached. Since 2023, Singapore has served as a connecting point for families abroad.
 
 26 years
 Since 1999
