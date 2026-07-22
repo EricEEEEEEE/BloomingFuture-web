@@ -85,6 +85,47 @@
     countNodes.forEach((node) => countObserver.observe(node));
   }
 
+  const learningLoop = document.querySelector("[data-learning-loop]");
+  if (learningLoop) {
+    const learningSteps = [...learningLoop.querySelectorAll("[data-loop-step]")];
+    let learningStepIndex = 0;
+    let learningLoopTimer = 0;
+    let learningLoopVisible = false;
+
+    function showLearningStep(index) {
+      learningStepIndex = index % learningSteps.length;
+      learningLoop.dataset.activeStep = String(learningStepIndex + 1);
+      learningSteps.forEach((step, stepIndex) => {
+        step.classList.toggle("is-active", stepIndex === learningStepIndex);
+        if (stepIndex === learningStepIndex) step.setAttribute("aria-current", "step");
+        else step.removeAttribute("aria-current");
+      });
+    }
+
+    function stopLearningLoop() {
+      window.clearInterval(learningLoopTimer);
+      learningLoopTimer = 0;
+    }
+
+    function startLearningLoop() {
+      if (reduceMotion) return;
+      if (document.hidden || !learningLoopVisible || learningLoopTimer) return;
+      learningLoopTimer = window.setInterval(() => showLearningStep(learningStepIndex + 1), 2000);
+    }
+
+    showLearningStep(0);
+    const learningLoopObserver = new IntersectionObserver(([entry]) => {
+      learningLoopVisible = entry.isIntersecting;
+      if (learningLoopVisible) startLearningLoop();
+      else stopLearningLoop();
+    }, { threshold: 0.25 });
+    learningLoopObserver.observe(learningLoop);
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopLearningLoop();
+      else startLearningLoop();
+    });
+  }
+
   const canvas = document.getElementById("heroMatrix");
   if (!canvas) return;
 

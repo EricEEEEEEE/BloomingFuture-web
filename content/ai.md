@@ -1,18 +1,36 @@
 # Section: ai
-> Last sync to index.html: 2026-05-19
+> Last sync to index.html: 2026-07-22
 
 ## CN
 02 / AI Education
 AI 教育方向
-二十六年的教学，遇上 AI
+二十六年真实教学，进入 AI 学习系统
 
-我们在新加坡，致力于将二十六年的华文教育经验与现代 AI 技术深度结合——帮助双语家庭的孩子找回对母语的信心，让华文真正活在新加坡孩子的生命里。
+花开远方把真实教材、课堂经验与教师判断，转化为可理解、可追踪、可反馈的 AI 学习过程，让每个孩子在文学、表达与思考中得到更有针对性的陪伴。
 
-// Our Singapore Mission · 我们的使命
+### AI Learning Loop · 教学方法图
 
-通过 AI 教育，
-让新加坡的孩子变得
-渊博 · 坦荡 · 快乐。
+一页真实教材，如何成为一次有温度的学习
+
+1. 真实教材 · Curriculum source / 二十六年课程与课堂积累
+2. 识别知识点 · Map concepts / 拆解文本、难点与能力目标
+3. 启发式提问 · Ask to reason / 不给答案，先邀请孩子思考
+4. 学生表达 · Listen for meaning / 理解语言背后的判断与感受
+5. 教师反馈 · Return insight / 把学习线索交还给真实教师
+
+AI 负责看见学习过程，教师负责理解孩子。
+
+### 真实课程证据
+
+不是概念图，是正在使用的远方教材：
+
+- 语言与文学 · 启蒙
+- 语言与文学 · 进阶
+- 青少年史地知识
+- 中外文学体系
+- 史地课程 · 全套
+
+### 四项学习能力
 
 01
 AI 老师，植根二十六年课程
@@ -26,24 +44,38 @@ AI 老师，植根二十六年课程
 
 03
 AI 赋能的课堂
-让新加坡老师拥有更多与孩子相处的时间 —— 自动阅读评估、作业分析、备课助手，实时了解课堂的真实状态。
+让教师拥有更多与孩子相处的时间 —— 自动阅读评估、作业分析、备课助手，实时了解课堂的真实状态。
 // classroom · 课堂
 
 04
 中华文化的对话伴侣
-从唐诗、《论语》到现代小说——能够与孩子交流一部作品意义与他们生活联系的 AI 同伴。专为新加坡双语家庭设计，让文学不只是考试内容，而是真实生活的一部分。
+从唐诗、《论语》到现代小说 —— 能够和孩子讨论作品如何连接真实生活的 AI 同伴，让文学不只是考试内容。
 // humanities · 人文
 
 ## EN
 02 / AI Education
 AI Education Direction
-Two decades of teaching, met with AI.
+Twenty-six years of teaching, becoming an AI learning system.
 
-In Singapore, we are combining 26 years of Chinese education experience with AI — helping bilingual children rediscover confidence in their mother tongue, and keeping Mandarin alive as a living language in their lives.
+Blooming Future turns real curriculum, classroom experience and teacher judgement into an AI learning process that can understand, adapt and return insight.
 
-// Our Singapore Mission
+### AI Learning Loop
 
-Through AI education, let Singapore's children grow learned, open-minded, and joyful.
+How real curriculum becomes responsive learning.
+
+1. 真实教材 · Curriculum source / Twenty-six years of curriculum and classroom practice.
+2. 识别知识点 · Map concepts / Map the text, challenges and learning goals.
+3. 启发式提问 · Ask to reason / Invite thought before offering an answer.
+4. 学生表达 · Listen for meaning / Understand the judgement and feeling behind the words.
+5. 教师反馈 · Return insight / Return learning signals to a real teacher.
+
+AI makes the learning process visible. Teachers keep it human.
+
+### Real Curriculum Evidence
+
+Five published curriculum sets are shown on the page: Language & Literature foundation and progression, History & Geography, Chinese & World Literature, and the complete History & Geography set.
+
+### Four Learning Capabilities
 
 01
 AI Tutors, grounded in our curriculum
@@ -62,7 +94,7 @@ Tools that give teachers more time with students — reading assessment, written
 
 04
 Conversational guides to Chinese culture
-From Tang poetry to the Analects to modern fiction — AI companions that connect great texts to a child's real life. Designed for Singapore's bilingual families, where literature should be a living experience, not just an exam subject.
+From Tang poetry to the Analects to modern fiction — AI companions that connect great texts to a child's real life, so literature becomes more than exam content.
 // humanities
 
 ## Ten Minutes
