@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = (ROOT / "index.html").read_text(encoding="utf-8")
+CSS = (ROOT / "assets/css/main.css").read_text(encoding="utf-8")
 README = (ROOT / "README.md").read_text(encoding="utf-8")
 REPORT_PATH = ROOT / "docs/v2-release-report.md"
 REPORT = REPORT_PATH.read_text(encoding="utf-8") if REPORT_PATH.exists() else ""
@@ -27,7 +28,7 @@ ASSET_DIMENSIONS = {
 class ReleaseReadinessTests(unittest.TestCase):
     def test_release_report_records_all_automated_and_browser_evidence(self):
         self.assertTrue(REPORT_PATH.is_file())
-        self.assertIn("49/49", REPORT)
+        self.assertIn("51/51", REPORT)
         for viewport in ("1440×900", "1024×768", "768×1024", "390×844"):
             self.assertIn(viewport, REPORT)
         self.assertGreaterEqual(REPORT.count("横向溢出 0"), 4)
@@ -68,6 +69,17 @@ class ReleaseReadinessTests(unittest.TestCase):
         self.assertNotRegex(REPORT, re.compile(r"\b(?:TODO|TBD|PLACEHOLDER)\b", re.I))
         for value in ("git push origin main", "git revert", "Cloudflare Pages"):
             self.assertIn(value, REPORT)
+
+    def test_footer_logo_keeps_its_square_intrinsic_ratio_when_rendered(self):
+        block = re.search(r"\.foot-logo-img\s*\{(?P<body>[^}]*)\}", CSS)
+        self.assertIsNotNone(block)
+        self.assertRegex(block.group("body"), r"height:\s*auto")
+
+    def test_ai_section_title_has_two_intentional_balanced_lines(self):
+        self.assertIn(
+            '<span class="cn ai-title-cn">二十六年真实教学，<br>进入 AI 学习系统</span>',
+            INDEX,
+        )
 
 
 if __name__ == "__main__":
