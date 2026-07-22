@@ -460,6 +460,10 @@ body.nav-open {
   max-width: 14em;
 }
 
+.ai .ai-title-cn {
+  font-size: 52px;
+}
+
 .bi-para {
   display: flex;
   flex-direction: column;
@@ -1774,6 +1778,7 @@ body.nav-open {
 
 .foot-logo-img {
   width: 120px;
+  height: auto;
 }
 
 .foot-brand {
@@ -1875,6 +1880,12 @@ body.nav-open {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .ai .ai-title-cn {
+    font-size: 40px;
   }
 }
 

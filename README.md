@@ -12,6 +12,20 @@ This is the source for **bloomingfuture.io** — a static one-page site, hand-cr
 - **Hosting:** Cloudflare Pages (auto-deployed from `main`)
 - **License:** All rights reserved. Code is open for reference; content and brand assets are not for reuse.
 
+## v2.0 Visual Upgrade
+
+v2.0 turns the homepage into a responsive AI knowledge field while keeping the institution's real-world evidence in view. It adds a four-layer Canvas hero, an explainable five-step learning loop, real textbook and Tianjin campus imagery, denser bilingual information cards, and motion/accessibility fallbacks across desktop, tablet, and mobile.
+
+All photography, textbook covers, and certificate crops are existing project assets sourced from the official far1999.com site; no generated imagery is used. See the [v2.0 release report](./docs/v2-release-report.md) for browser evidence and the asset ledger.
+
+Run a local preview from the repository root:
+
+```bash
+python3 -m http.server 8016
+```
+
+Then open `http://127.0.0.1:8016`. No build step or dependency installation is required.
+
 ## For AI agents working on this repo
 
 Read [`CLAUDE.md`](./CLAUDE.md) first. It is the project's constitution and explains what can and cannot be changed.
