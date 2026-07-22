@@ -1,0 +1,10 @@
+# Loopwork 安全规则（项目级；需项目被信任后生效）
+prefix_rule(pattern=["rm", "-rf"], decision="forbidden", justification="删除必须先问用户，用精确路径")
+prefix_rule(pattern=["rm", "-fr"], decision="forbidden", justification="同上")
+prefix_rule(pattern=["rm", "-r", "-f"], decision="forbidden", justification="同上")
+prefix_rule(pattern=["rm", "-f", "-r"], decision="forbidden", justification="同上")
+prefix_rule(pattern=["git", "push", "--force"], decision="forbidden", justification="会抹掉远端历史，必须用户亲自决定")
+prefix_rule(pattern=["git", "push", "-f"], decision="forbidden", justification="同上")
+prefix_rule(pattern=["git", "reset", "--hard"], decision="prompt", justification="会丢弃未存档工作，需确认")
+prefix_rule(pattern=["chmod", "777"], decision="forbidden", justification="不做全开权限")
+prefix_rule(pattern=["sed", "-i"], decision="prompt", justification="就地改写文件，围栏要求确认目标不是考题/规格")

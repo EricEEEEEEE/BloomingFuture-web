@@ -29,3 +29,7 @@ pnpm-lock.yaml
 # Environment (none expected, just in case)
 .env
 .env.local
+*.local
+.loopwork/logs/
+.loopwork/batch.flag
+__pycache__/
