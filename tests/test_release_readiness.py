@@ -80,6 +80,13 @@ class ReleaseReadinessTests(unittest.TestCase):
             '<span class="cn ai-title-cn">二十六年真实教学，<br>进入 AI 学习系统</span>',
             INDEX,
         )
+        breakpoint = "@media (min-width: 1001px) and (max-width: 1100px)"
+        self.assertIn(breakpoint, CSS)
+        narrow_desktop = CSS.split(
+            breakpoint, 1
+        )[-1].split("@media", 1)[0]
+        self.assertIn(".ai .ai-title-cn", narrow_desktop)
+        self.assertIn("font-size: 40px", narrow_desktop)
 
 
 if __name__ == "__main__":
