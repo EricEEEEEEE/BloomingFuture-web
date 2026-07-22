@@ -233,22 +233,10 @@ button {
   min-height: 100svh;
   overflow: hidden;
   isolation: isolate;
-  background:
-    linear-gradient(120deg, var(--bg-deep), var(--bf-navy)),
-    var(--bg-deep);
+  background: var(--bg-deep);
+  border-bottom: 1px solid var(--deep-line);
   color: var(--bg);
   padding: 112px 0 64px;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 34%;
-  pointer-events: none;
-  background: linear-gradient(180deg, transparent, var(--bg-deep));
-  opacity: .7;
-  z-index: -1;
 }
 
 #heroMatrix {
@@ -256,12 +244,15 @@ button {
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-top {
+  position: relative;
+  z-index: 1;
   width: min(1160px, calc(100% - 48px));
-  margin: 0 auto 44px;
+  margin: 0 auto 28px;
 }
 
 .hero-meta,
@@ -287,10 +278,16 @@ button {
 }
 
 .hero-body {
-  min-height: 70svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
+  z-index: 1;
+  min-height: calc(100svh - 232px);
+  display: grid;
+  align-content: center;
+  gap: 52px;
+}
+
+.hero-content {
+  max-width: 880px;
 }
 
 .hero-tag {
@@ -356,7 +353,7 @@ button {
   grid-template-columns: minmax(0, 660px) auto;
   gap: 64px;
   align-items: end;
-  margin-top: 64px;
+  max-width: 920px;
 }
 
 .hero-scroll {
@@ -373,7 +370,8 @@ button {
 .hero-scroll .line {
   width: 1px;
   height: 64px;
-  background: linear-gradient(180deg, var(--bf-green), transparent);
+  background: var(--bf-green);
+  opacity: .55;
 }
 
 .section {
