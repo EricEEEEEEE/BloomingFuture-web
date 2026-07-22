@@ -1335,21 +1335,97 @@ button {
 }
 
 .singapore {
-  background: linear-gradient(180deg, transparent, var(--bg-elev));
+  padding: 80px 0;
+  border-block: 1px solid var(--line);
+  background: var(--bg-elev);
 }
 
-.singapore-inner {
+.singapore-band-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
-  gap: 72px;
-  align-items: center;
+}
+
+.sg-band-head {
+  display: grid;
+  grid-template-columns: minmax(220px, .72fr) minmax(300px, 1.08fr) minmax(280px, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.sg-band-label {
+  display: grid;
+  gap: 20px;
+}
+
+.sg-year {
+  margin: 0;
+  color: var(--bf-green);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+}
+
+.sg-band-head .bi-title {
+  margin: 0;
+}
+
+.sg-band-head .bi-title .cn {
+  font-size: 40px;
+}
+
+.sg-band-head .bi-title .en {
+  margin-top: 2px;
+  font-size: 28px;
+}
+
+.sg-intro {
+  margin: 0;
+}
+
+.sg-intro .cn {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.sg-intro .en {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sg-inline-facts {
+  margin: 34px 0 0;
+  padding-block: 18px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  border-block: 1px solid var(--line-strong);
+}
+
+.sg-inline-facts div {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.sg-inline-facts dt {
+  color: var(--ink-3);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+
+.sg-inline-facts dd {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .sg-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 34px;
+  gap: 8px;
+  margin-top: 20px;
 }
 
 .sg-tags span,
@@ -1373,107 +1449,20 @@ button {
   text-align: center;
 }
 
-.sg-card {
-  position: relative;
-  padding: 40px;
-  background: linear-gradient(160deg, var(--bg-card), var(--bg));
-  border: 1px solid var(--line-strong);
-}
-
-.sg-card::before,
-.sg-card::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-color: var(--bf-green);
-  border-style: solid;
-}
-
-.sg-card::before {
-  top: -1px;
-  left: -1px;
-  border-width: 1px 0 0 1px;
-}
-
-.sg-card::after {
-  right: -1px;
-  bottom: -1px;
-  border-width: 0 1px 1px 0;
-}
-
-.badge {
-  margin: 0 0 24px;
-  color: var(--bf-navy);
-  font-size: 11px;
-  letter-spacing: .2em;
-}
-
-.sg-card h3 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 38px;
-  line-height: 1.05;
-  font-weight: 500;
-}
-
-.sg-card .sub {
-  margin: 8px 0 28px;
-  color: var(--ink-3);
-  font-family: var(--serif-cn);
-  font-size: 14px;
-  letter-spacing: .28em;
-}
-
-.sg-card dl {
-  margin: 0;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
-  display: grid;
-  gap: 16px;
-}
-
-.sg-card dl div {
-  display: grid;
-  grid-template-columns: 126px 1fr;
-  gap: 18px;
-}
-
-.sg-card dt {
-  color: var(--ink-3);
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.sg-card dd {
-  margin: 0;
-  color: var(--ink);
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.sg-card dd span {
-  display: block;
-  color: var(--bf-blue);
-  font-family: var(--mono);
-  font-size: 13px;
-}
-
 .philosophy {
+  padding: 104px 0;
   text-align: center;
   background: var(--bg-elev);
 }
 
 .phil-inner {
-  max-width: 930px;
+  max-width: 1000px;
 }
 
 .quote-cn {
-  margin: 46px 0 22px;
+  margin: 38px 0 18px;
   font-family: var(--serif-cn);
-  font-size: 46px;
+  font-size: 42px;
   line-height: 1.32;
   font-weight: 500;
   letter-spacing: .04em;
@@ -1501,13 +1490,13 @@ button {
   max-width: 50ch;
   color: var(--ink-2);
   font-family: var(--serif);
-  font-size: 30px;
+  font-size: 27px;
   font-style: italic;
   line-height: 1.4;
 }
 
 .phil-signature {
-  margin: 44px 0 0;
+  margin: 32px 0 0;
   color: var(--ink-3);
   font-family: var(--serif-cn);
   font-size: 14px;
@@ -1516,7 +1505,7 @@ button {
 
 .mascot-callout {
   width: 100%;
-  margin: 64px 0 0;
+  margin: 56px 0 0;
   display: flex;
   justify-content: center;
   gap: 22px;
@@ -1567,39 +1556,115 @@ button {
 }
 
 .phil-body {
-  margin-top: 84px;
+  margin-top: 64px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 52px;
+  gap: 48px;
   text-align: left;
 }
 
-.phil-body .full {
-  grid-column: 1 / -1;
-  max-width: 72ch;
-  margin-inline: auto;
+.phil-column {
+  display: grid;
+  align-content: start;
+  gap: 22px;
+}
+
+.phil-column .bi-para {
+  margin: 0;
+}
+
+.phil-conclusion {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
 }
 
 .contact-grid {
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 72px;
+  grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+  margin-top: 64px;
+  align-items: stretch;
 }
 
 .contact-card {
-  min-height: 300px;
+  min-width: 0;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.contact-card.primary {
-  background: linear-gradient(160deg, var(--red-soft), var(--bg-card));
+.contact-primary {
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(300px, 1.15fr) minmax(260px, 1fr);
+  gap: 0;
 }
 
-.contact-card.tianjin .lines {
+.contact-photo {
+  min-width: 0;
+  min-height: 420px;
+  margin: 0;
+  padding: 28px;
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  border-right: 1px solid var(--deep-line);
+  background: var(--bg-deep);
+}
+
+.contact-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.contact-photo figcaption {
+  color: var(--white-soft);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-align: center;
+}
+
+.contact-card-body {
+  min-width: 0;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-primary .lines,
+.singapore-secondary .lines {
   margin-top: 0;
+}
+
+.contact-primary .lines {
   padding-bottom: 18px;
   border-bottom: 1px solid var(--line);
+}
+
+.singapore-secondary {
+  background: var(--bg-elev);
+}
+
+.contact-card.departments {
+  grid-column: 1 / -1;
+  min-height: 0;
+  padding: 28px 34px;
+  display: grid;
+  grid-template-columns: minmax(220px, .8fr) minmax(240px, .9fr) minmax(0, 1.5fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.departments-heading {
+  display: grid;
+  gap: 10px;
+}
+
+.department-mail {
+  display: grid;
+  gap: 4px;
 }
 
 .tag {
@@ -1680,7 +1745,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 6px;
+  justify-content: flex-end;
 }
 
 .footer {
@@ -1831,7 +1896,6 @@ button {
   }
 
   .section-grid,
-  .singapore-inner,
   .hero-lede,
   .evidence-grid,
   .evidence-head {
@@ -1854,9 +1918,21 @@ button {
   .stats,
   .credentials,
   .product-grid,
-  .ritual-grid,
-  .contact-grid {
+  .ritual-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sg-band-head {
+    grid-template-columns: minmax(220px, .7fr) minmax(0, 1.3fr);
+  }
+
+  .sg-intro {
+    grid-column: 1 / -1;
+    max-width: 72ch;
   }
 
   .foot-top {
@@ -1942,6 +2018,25 @@ button {
 
   .loop-step p {
     grid-column: 3;
+  }
+
+  .sg-band-head,
+  .sg-inline-facts {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sg-inline-facts {
+    gap: 16px;
+  }
+
+  .contact-card.departments {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-card.departments .dept-tags {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
   }
 }
 
@@ -2046,9 +2141,7 @@ button {
 
   .stat,
   .credential,
-  .product-card,
-  .contact-card,
-  .sg-card {
+  .product-card {
     padding: 28px 24px;
   }
 
@@ -2070,9 +2163,25 @@ button {
     height: 52px;
   }
 
-  .sg-card dl div {
-    grid-template-columns: 1fr;
-    gap: 4px;
+  .singapore {
+    padding: 72px 0;
+  }
+
+  .sg-band-head .bi-title .cn {
+    font-size: 34px;
+  }
+
+  .sg-band-head .bi-title .en {
+    font-size: 25px;
+  }
+
+  .sg-inline-facts div {
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .sg-tags span {
+    flex-basis: 140px;
   }
 
   .quote-cn {
@@ -2081,8 +2190,33 @@ button {
 
   .mascot-callout {
     flex-direction: column;
-    padding: 48px 0;
     text-align: center;
+  }
+
+  .contact-primary {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-photo {
+    min-height: 0;
+    padding: 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--deep-line);
+  }
+
+  .contact-card-body,
+  .singapore-secondary,
+  .contact-card.departments {
+    padding: 28px 24px;
+  }
+
+  .contact-card.departments {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .contact-card.departments .dept-tags {
+    grid-column: auto;
   }
 
   .ten-quote {
