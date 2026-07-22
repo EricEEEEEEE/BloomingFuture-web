@@ -26,6 +26,8 @@ python3 -m http.server 8016
 
 Then open `http://127.0.0.1:8016`. No build step or dependency installation is required.
 
+Operations: [使用说明](./使用说明.md) · [维护手册](./维护手册.md)
+
 ## For AI agents working on this repo
 
 Read [`CLAUDE.md`](./CLAUDE.md) first. It is the project's constitution and explains what can and cannot be changed.
