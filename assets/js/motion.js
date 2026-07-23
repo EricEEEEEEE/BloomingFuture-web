@@ -155,6 +155,7 @@
     const ghost = document.createElement("img");
     ghost.className = "motion-image-ghost";
     ghost.alt = "";
+    ghost.decoding = "async";
     ghost.setAttribute("aria-hidden", "true");
     ghost.style.setProperty("--ghost-color", `var(${colors[index % colors.length]})`);
     document.body.appendChild(ghost);
@@ -217,6 +218,7 @@
   }
 
   function emitGhost(image, x, y, now) {
+    if (!image.complete || !image.naturalWidth) return;
     const ghost = ghosts[ghostIndex++ % MAX_IMAGE_GHOSTS];
     const rect = image.getBoundingClientRect();
     const width = Math.min(132, Math.max(72, rect.width * .24));
