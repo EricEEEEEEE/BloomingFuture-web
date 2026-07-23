@@ -82,6 +82,13 @@
 7. `prefers-reduced-motion: reduce` 下不拆字、不播放位移、残影、glitch 或自动循环，所有内容直接显示最终状态；键盘 focus 样式完整，拆分文字不被读屏重复朗读。
 8. 不引入第三方 runtime、npm、CDN 或新生成图片。保留 `main.css < 40 KB`、`main.js < 20 KB`，新增本地动效文件各自不超过 12 KB；全站 CSS 合计不超过 52 KB、JS 合计不超过 32 KB。
 
+## F11 生产缓存一致性（v2.1 热修）
+
+验收：
+1. `main.js` 使用新的本地缓存键，不再复用已被 Cloudflare 边缘缓存的 `v=2.0.0` URL。
+2. 正式域名返回的 `index.html`、`main.js` 与三份 motion 资源 SHA-256 必须和本地发布 commit 完全一致。
+3. 正式手机视口能打开菜单、锁定页面滚动，并用 Esc 关闭后把焦点归还给菜单按钮。
+
 ## 边界（明确不做）
 
 - 不换 Logo，不生成或重绘任何照片、证书、教材和吉祥物。

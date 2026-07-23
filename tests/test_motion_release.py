@@ -13,7 +13,7 @@ REPORT = REPORT_PATH.read_text(encoding="utf-8") if REPORT_PATH.exists() else ""
 class MotionReleaseTests(unittest.TestCase):
     def test_report_records_full_browser_matrix(self):
         self.assertTrue(REPORT_PATH.is_file())
-        self.assertIn("72/72", REPORT)
+        self.assertIn("73/73", REPORT)
         for viewport in ("1440×900", "1024×768", "768×1024", "390×844"):
             self.assertIn(viewport, REPORT)
         self.assertGreaterEqual(REPORT.count("横向溢出 0"), 4)
