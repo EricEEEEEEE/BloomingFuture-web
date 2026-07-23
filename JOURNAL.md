@@ -44,3 +44,5 @@
 - [audit] phase → test-writing @ 2026-07-22T15:26:47+08:00
 - [audit] phase → implementing @ 2026-07-22T15:27:32+08:00
 - [audit] phase → test-writing (bump-cycle) @ 2026-07-22T15:41:48+08:00
+- 2026-07-23 · T09 红：新增 8 项全站 AI 动效考题，首次运行 7 项失败、1 项报错；缺口覆盖本地 motion 资源、文字/图片全覆盖、单一 pointer 调度、六区标志动作、预算与完整降级。
+- [audit] phase → implementing @ 2026-07-23T10:33:38+08:00
