@@ -52,3 +52,6 @@
 - [audit] phase → implementing @ 2026-07-23T10:58:43+08:00
 - [audit] phase → test-writing @ 2026-07-23T11:00:11+08:00
 - [audit] phase → implementing @ 2026-07-23T11:00:43+08:00
+- 2026-07-23 · T10 ✅ 61 红→绿：建立单一 motion engine，完成视口文字编排、短标签解码、Hero 色散、桌面五色 pointer 轨迹、磁吸与统一调度；实现存档 `be46d62`。
+- 2026-07-23 · T11 ✅ 64 红→绿：14 张既有真实图片接入五色遮罩、扫描追光、短 glitch、3D tilt 与最多 6 个同图残影；移动端禁用重交互并补齐解码/绘制边界，实现存档 `d348d1d`。
+- 2026-07-23 · T12 ✅ 67 红→绿：About、AI、九宫格、Singapore、理念、Contact 与 Footer 获得独立编排；修复初始文字揭示死锁、横向伪溢出、页脚 logo 变形与 transform 冲突，实现存档 `5216976`。
