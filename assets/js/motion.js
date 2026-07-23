@@ -308,7 +308,11 @@
   document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
       points = [];
-      cursor.classList.remove("is-visible");
+      cursor.classList.remove("is-visible", "is-interactive");
+      resetMagnet();
+      resetImage();
+      resetSurface();
+      ghosts.forEach((ghost) => ghost.classList.remove("is-active"));
       if (frame) cancelAnimationFrame(frame);
       frame = 0;
     } else {

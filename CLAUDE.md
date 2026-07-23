@@ -263,6 +263,9 @@ Founded in 1999...
 | `MissionBlock` | 强调段落 | 关键短语着色（red / navy） |
 | `ProductCard` | AI section 4 个产品卡 | 编号 + 中英标题 + 描述 + 角标 |
 | `ContactCard` | 三栏联系卡 | 地址、电话、邮箱、工时 |
+| `FullSiteMotion` | 全站文字与分区编排 | 视口进入触发；短标签原位解码；六区使用独立节奏 |
+| `FinePointer` | 桌面光标反馈 | 五色 Canvas 轨迹、磁吸与单一 pointer 调度；移动端关闭 |
+| `MotionImage` | 真实素材交互 | 五色遮罩、扫描、短 glitch、3D tilt 与最多 6 个同图残影 |
 | `Footer` | 底部 3 列 | Group / Divisions / Contact |
 
 ### Reveal 动画
@@ -280,6 +283,11 @@ Founded in 1999...
 | Hero 粒子动画 | Canvas 2D；token 词库 + 5 色；`requestAnimationFrame`；DPR ≤ 2 |
 | Reveal 淡入 | `IntersectionObserver`，threshold 0.12，rootMargin `0px 0px -60px 0px` |
 | Number count-up | `IntersectionObserver`，threshold 0.5，1400ms ease-cubic-out |
+| FullSiteMotion | 新增 pointer 动效共享单一 `requestAnimationFrame` 调度器；视口文字编排、短标签解码与 Hero 色散 |
+| FinePointer | 仅 `pointer:fine` 且宽度 > 820px 启用五色轨迹与磁吸；移动端不创建 |
+| 图片动效 | 运行时包裹现有图片；一次性遮罩揭示 + 短 glitch + 有界同图残影；不替换原图 |
+| 分区编排 | About 时间线、AI 学习信号/教材、九宫格波次、Singapore 标签、理念逐词、Contact 卡片各自触发 |
+| 动效生命周期 | 页面隐藏暂停；离开作用区归零；`prefers-reduced-motion` 直接显示静态最终状态 |
 | 移动端汉堡菜单 | 切换 `.nav-links` display；点击外部关闭（可选优化） |
 | 报名 CTA | 锚点跳到 `#contact`，**首版不接表单** |
 
@@ -441,5 +449,5 @@ BloomingFuture-web/
 
 ---
 
-*Last updated: 2026-05-19*
+*Last updated: 2026-07-23*
 *Owner: Eric (鄂玮强)*
