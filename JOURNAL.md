@@ -45,4 +45,7 @@
 - [audit] phase → implementing @ 2026-07-22T15:27:32+08:00
 - [audit] phase → test-writing (bump-cycle) @ 2026-07-22T15:41:48+08:00
 - 2026-07-23 · T09 红：新增 8 项全站 AI 动效考题，首次运行 7 项失败、1 项报错；缺口覆盖本地 motion 资源、文字/图片全覆盖、单一 pointer 调度、六区标志动作、预算与完整降级，失败考卷存档 `025eefc`。
+- 2026-07-23 · T11 红：新增 3 项图片运行时性能考题，首次运行 3 项失败；缺少 3D backface 保护、残影 paint containment、高度上限与解码状态门槛。
 - [audit] phase → implementing @ 2026-07-23T10:33:38+08:00
+- [audit] phase → test-writing @ 2026-07-23T10:58:13+08:00
+- [audit] phase → implementing @ 2026-07-23T10:58:43+08:00
